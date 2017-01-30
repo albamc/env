@@ -10,8 +10,8 @@ export DISPLAY=:0.0
 export XAUTHORITY=/home/albamc/.Xauthority
 
 TOUCHPADID=`xinput list | grep Touchpad | awk '{print $6}' | awk -F'=' '{print$2}'`
-xinput set-prop $TOUCHPADID "Device Enabled" 0 >>$LOGFILE 2>&1
+xinput set-prop $TOUCHPADID "Device Enabled" 1 >>$LOGFILE 2>&1
 
 WEBCAMID=`xinput list | grep WebCam | awk '{print $5}' | awk -F'=' '{print$2}'`
-xinput set-prop $WEBCAMID "Device Enabled" 0 >>$LOGFILE 2>&1
+xinput set-prop $WEBCAMID "Device Enabled" 1 >>$LOGFILE 2>&1
 

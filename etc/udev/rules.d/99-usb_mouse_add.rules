@@ -1,0 +1,1 @@
+KERNEL=="hiddev0",SUBSYSTEM=="usbmisc",ACTION=="add",RUN+="/home/albamc/env/disable_touchpad.sh"
